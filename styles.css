@@ -1,0 +1,185 @@
+/* Reset de estilos para elementos */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    margin: 0 1rem 0 1rem;
+}
+
+
+main {
+    background-color: white;
+    margin-top: -3.05rem
+}
+/* Estilos para o cabeçalho */
+header {
+    text-align: center;
+    padding-top: 1rem;
+    background-color: white;
+}
+
+.cabeçalhoLogo {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para o conteúdo principal */
+.conteudoPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.imagemPrincipal {
+    max-width: 100%;
+    height: auto;
+}
+
+.conteudo {
+    text-align: justify;
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+
+h1, h2, .conteudoNoticia, .fontes {
+    padding-bottom: 0.5rem;
+}
+
+h1, .linkConteudo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.conteudoNoticia, .linkConteudo {
+    font-size: 1rem;   
+}
+
+/* Estilos para fontes secundárias */
+.fontes {
+    color: gray;
+    font-size: 0.925rem;
+    font-style: italic;
+}
+
+/* Estilos para o conteúdo secundário */
+.conteudoSecundario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.conteudoFilho {
+    max-width: 100%;
+    padding: 1rem;
+    margin: 0.5rem
+}
+
+.imagemConteudoSecundario {
+    max-width: 100%;
+    height: auto;
+    padding-left: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Estilos para as linhas gradientes */
+.linhaGradienteRoxa, .linhaGradienteAzul, .linhaGradienteVerde {
+    width: 30%;
+    height: 4px;
+}
+
+.linhaGradienteRoxa {
+    background-image: linear-gradient(to right, pink, purple);
+}
+
+.linhaGradienteAzul {
+    background-image: linear-gradient(to right, #87CEEB, #1E90FF);
+}
+
+.linhaGradienteVerde {
+    background-image: linear-gradient(to right, rgb(66, 245, 233), rgb(165, 251, 165));
+}
+
+/* Estilos para o rodapé */
+footer {
+    margin-top: 0.3rem;
+    text-align: center;
+    background-color: lightgray;
+}
+
+.rodapeImagem {
+    max-width: 100%;
+    height: auto;   
+}
+
+/* Estilos para links */
+.linkConteudo {
+    text-decoration: none;
+    color: inherit; 
+    font-size: inherit;
+}
+
+.linkConteudo h1, .linkConteudo .conteudoNoticia {
+    font-size: inherit; 
+}
+
+.linkConteudo:hover {
+    color: grey;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+
+.linkRodape {
+    text-decoration: underline;
+}
+
+.linkRodape:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/* Estilos responsivos para telas menores (mobiles e tablets) */
+@media screen and (max-width: 768px) {
+
+    main {
+        margin-top: -2.05rem;
+    }
+
+    .linkConteudo h1, .linkConteudo .conteudoNoticia {
+        font-size: inherit;
+    }
+
+    .imagemConteudoSecundario{
+        padding: 0 0 0 0;
+    }
+
+    .linhaGradienteRoxa, .linhaGradienteAzul, .linhaGradienteVerde {
+        width: 40%;
+    }
+}
+
+/* Estilos responsivos para telas maiores (monitores) */
+@media screen and (min-width: 1200px) {
+    .conteudoSecundario {
+        gap: 2rem;
+    }
+    
+}
